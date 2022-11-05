@@ -11,13 +11,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.min.css">
     <title>BIOCWT</title>
 </head>
 <body>
     <header>
         <div class="container">
-            <img src="./img/main-logo.png" alt="Main logo of Biocwt company">
+            <a href="#">
+                <img src="./img/main-logo.png" alt="Main logo of Biocwt company">
+            </a>
             <div class="menu">
                 <ul class="menu-list">
                     <li class="menu-list__item">
@@ -52,15 +55,17 @@
     <main>
         <section class="landing">
             <div class="container">
-                <div class="titles">
-                    <h2>Solid wood products</h2>
-                    <p>Oak, beech, ash from 1700 CZK per m3</p>
-                    <button>Order</button>
-                </div>
-                <div class="pictures">
-                    <img class="img-1" src="./img/pictures-image-1.png" alt="A man builds a wooden chair">
-                    <img class="img-2" src="./img/pictures-image-2.png" alt="Wooden stairs">
-                    <img class="img-3" src="./img/pictures-image-3.png" alt="Wooden table">
+                <div class="black">
+                    <div class="titles">
+                        <h2>Solid wood products</h2>
+                        <p>Oak, beech, ash from 1700 CZK per m3</p>
+                        <button>Order</button>
+                    </div>
+                    <div class="pictures">
+                        <img class="img-1" src="./img/pictures-image-1.png" alt="A man builds a wooden chair">
+                        <img class="img-2" src="./img/pictures-image-2.png" alt="Wooden stairs">
+                        <img class="img-3" src="./img/pictures-image-3.png" alt="Wooden table">
+                    </div>
                 </div>
             </div>
         </section>
@@ -94,7 +99,49 @@
                         <li class="second-list__item check">Durability</li>
                         <li class="third-list__item cross">Hard to handle</li>
                     </ul>
+                    <ul class="four-list">
+                        <li>
+                            <img src="./img/works-kauri.png" alt="Kauri">
+                        </li>
+                        <h3 class="title">Kauri</h3>
+                        <li class="second-list__item check">Durability</li>
+                        <li class="first-list__item check">Beautiful texture</li>
+                        <li class="third-list__item cross">Hard to handle</li>
+                    </ul>
+                    <ul class="four-list">
+                        <li>
+                            <img src="./img/works-larch.png" alt="Larch">
+                        </li>
+                        <h3 class="title">Larch</h3>
+                        <li class="second-list__item check">Durability</li>
+                        <li class="third-list__item cross">Hard to handle</li>
+                    </ul>
+                    <ul class="four-list">
+                        <li>
+                            <img src="./img/works-pine.png" alt="Pine">
+                        </li>
+                        <h3 class="title">Pine</h3>
+                        <li class="second-list__item check">Durability</li>
+                        <li class="first-list__item check">Water resistance</li>
+                        <li class="third-list__item cross">Hard to handle</li>
+                    </ul>
+                    <ul class="four-list">
+                        <li>
+                            <img src="./img/works-spruce.png" alt="Spruce">
+                        </li>
+                        <h3 class="title">Spruce</h3>
+                        <li class="first-list__item check">Water resistance</li>
+                        <li class="third-list__item cross">Hard to handle</li>
+                    </ul>
                 </div>
+                <ul class="control" id="custom-control">
+                    <li class="prev">
+                      <i class="fas fa-angle-left fa-2x"></i>
+                    </li>
+                    <li class="next">
+                      <i class="fas fa-angle-right fa-2x"></i>
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="gallery">
@@ -105,70 +152,94 @@
                         <img src="./img/gallery-image-1.png" alt="Wooden kitchen">
                     </div>
                     <div>
-                        <img src="./img/gallery-image-2.jpg" alt="Wooden kitchen">
+                        <img src="./img/gallery-image-2.jpg" alt="Wooden bedroom">
                     </div>
                     <div>
-                        <img src="./img/gallery-image-3.jpg" alt="Wooden kitchen">
+                        <img src="./img/gallery-image-3.jpg" alt="Wooden living room">
                     </div>
                     <div>
-                        <img src="./img/gallery-image-4.jpg" alt="Wooden kitchen">
+                        <img src="./img/gallery-image-4.jpg" alt="Wooden sofa">
+                    </div>
+                    <div>
+                        <img src="./img/gallery-image-5.jpg" alt="Wooden sofa">
+                    </div>
+                    <div>
+                        <img src="./img/gallery-image-6.jpg" alt="Wooden house">
+                    </div>
+                    <div>
+                        <img src="./img/gallery-image-7.jpg" alt="Wooden house">
                     </div>
                 </div>
+                <ul class="control" id="custom-control-2">
+                    <li class="prev">
+                      <i class="fas fa-angle-left fa-2x"></i>
+                    </li>
+                    <li class="next">
+                      <i class="fas fa-angle-right fa-2x"></i>
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="advantages">
             <div class="container">
                 <h2>Advantages working with us</h2>
                 <div class="inside">
-                    <ul class="advantages-list">
-                        <li class="advantages-list__item">
-                            In-house carpentry production
-                        </li>
-                        <li class="advantages-list__item">
-                            We only treat wood with environmentally
-                            friendly and safe products
-                        </li>
-                        <li class="advantages-list__item">
-                            Prices from the manufacturer, no extra charges
-                        </li>
-                    </ul>
-                    <img src="./img/video.png" alt="video">
+                    <div class="inside-div">
+                        <ul class="advantages-list">
+                            <li class="advantages-list__item">
+                                In-house carpentry production
+                            </li>
+                            <li class="advantages-list__item">
+                                We only treat wood with environmentally
+                                friendly and safe products
+                            </li>
+                            <li class="advantages-list__item">
+                                Prices from the manufacturer, no extra charges
+                            </li>
+                        </ul>
+                        <video width="320" height="240" autoplay>
+                            <source src="./media/video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                   </div>
                     <button>Receive a consultation</button>
                 </div>
             </div>
         </section>
         <section class="about">
             <div class="container">
-                <div class="titles">
-                    <h2>About us</h2>
-                    <p>BIO CWT  - We manufacture solid wood products
-                       according to individual drawings. We make chairs,
-                       armchairs, wardrobes, beds and much more in our own workshop,
-                       equipped with all the necessary industrial equipment.
-                    </p>
-                </div>
-                <div class="about-pictures">
-                    <img class="img-1" src="./img/about-image-1.png" alt="Person taking measures wood">
-                    <img class="img-2" src="./img/about-image-2.png" alt="Portrait young motivated carpenter standing by woodworking machine his carpentry workshop">
-                    <img class="img-3" src="./img/about-image-3.png" alt="Cropped man wearing blue overall drawing furniture sheet paper">
+                <div class="black">
+                    <div class="titles">
+                        <h2>About us</h2>
+                        <p>BIO CWT  - We manufacture solid wood products
+                        according to individual drawings. We make chairs,
+                        armchairs, wardrobes, beds and much more in our own workshop,
+                        equipped with all the necessary industrial equipment.
+                        </p>
+                    </div>
+                    <div class="about-pictures">
+                        <img class="img-1" src="./img/about-image-1.png" alt="Person taking measures wood">
+                        <img class="img-2" src="./img/about-image-2.png" alt="Portrait young motivated carpenter standing by woodworking machine his carpentry workshop">
+                        <img class="img-3" src="./img/about-image-3.png" alt="Cropped man wearing blue overall drawing furniture sheet paper">
+                    </div>
                 </div>
             </div>
         </section>
         <section class="questions">
             <div class="container">
                 <h2>Any questions?</h2>
-                <div>
+                <div class="forms">
+                    <p>Write to us and we will be sure to answer all
+                        your questions and give you a comprehensive
+                        consultation.
+                    </p>
                     <form>
                         <input type="text" placeholder="Your name">
                         <input type="tel" placeholder="Your telephone number">
-                        <textarea cols="20" rows="5"></textarea>
+                        <textarea cols="20" rows="20" placeholder="Your question"></textarea>
                         <button>Send</button>
                     </form>
-                    <p>Write to us and we will be sure to answer
-                       all your questions and give you a comprehensive
-                       consultation.
-                    </p>
-                    <img src="./img/questions-image-1.png" style="display: none;" alt="Wood">
+                    <img src="./img/questions-image-1.png" alt="Wood">
                 </div>
             </div>
         </section>
@@ -176,21 +247,29 @@
     <footer>
         <div class="container">
             <div>
-                <img src="./img/main-logo.png" alt="Main logo Biocwt">
-                <span>Privacy Policy</span>
+                <a href="#">
+                    <img src="./img/main-logo.png" alt="Main logo Biocwt">
+                </a>
             </div>
             <div class="tel">
-                <svg class="icon">
-                    <use xlink:href="./img/sprite.svg#ph_phone-call"></use>
-                </svg>
-                <span>+420 000 000 000</span>
+                <span>
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#ph_phone-call"></use>
+                    </svg>
+                    +420 000 000 000
+                </span>
             </div>
             <div class="locations">
-                <svg class="icon">
-                    <use xlink:href="./img/sprite.svg#bi_geo-alt"></use>
-                </svg>
-                <span>Na Plzeňce 1166/0 150 00</span>
+                <span>
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#bi_geo-alt"></use>
+                    </svg>
+                    Na Plzeňce 1166/0 150 00
+                </span>
             </div>
+            <span>
+                Privacy Policy
+            </span>
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js" integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -199,24 +278,32 @@
         let slider = tns({
           container: '.my-slider',
           items: 2,
+          gutter: 10,
+          edgePadding: 20,
           center: true,
-          controls: false,
+          controls: true,
+          controlsPosition: "bottom",
+          navPosition: "bottom",
           autoplay: true,
+          mouseDrag: true,
           loop: true,
           autoplayButtonOutput: false,
-          navAsThumbnails: true,
+          controlsContainer: "#custom-control",
           responsive: {
-            640: {
+            576: {
               edgePadding: 20,
               gutter: 20,
-              items: 2,
+              items: 3,
               
             },
-            700: {
-              gutter: 30
+            768: {
+              gutter: 30,
+              items: 4,
             },
-            900: {
-              items: 3,
+            960: {
+              items: 4,
+              gutter: 10,
+              fixedWidth: 300,
             }
           }
         });
@@ -227,22 +314,32 @@
           gutter: 30,
           center: true,
           fixedWidth: 300,
-          controls: false,
+          controls: true,
           autoplay: true,
           loop: true,
+          mouseDrag: true,
           autoplayButtonOutput: false,
+          controlsPosition: "bottom",
+          navPosition: "bottom",
+          controlsContainer: "#custom-control-2",
           responsive: {
-            640: {
+            576: {
               edgePadding: 20,
               gutter: 20,
-              items: 2,
+              items: 1,
               
             },
-            700: {
-              gutter: 30
+            768: {
+              gutter: 20,
+              fixedWidth: 600,
+              edgePadding: 20,
+              items: 1,
             },
-            900: {
-              items: 3,
+            1170: {
+              items: 1,
+              gutter: 20,
+              edgePadding: 20,
+              fixedWidth: 1000,
             }
           }
         });
