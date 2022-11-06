@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.min.css">
+    <title>BIOCWT</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html">
+                <img src="img/main-logo.png" alt="Main logo of Biocwt company">
+            </a>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li class="menu-list__item">
+                        <a href="index_gallery.html">
+                            Gallery
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="index_price.html">
+                            Prices for services
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="index_about.html">
+                            About us
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="index_contact.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="gallery">
+            <div class="container">
+                <h2>Our work</h2>
+                <div id="center">
+                    <div>
+                        <img src="./img/gallery-image-1.png" alt="Wooden kitchen">
+                    </div>
+                    <div>
+                        <img src="./img/gallery-image-2.jpg" alt="Wooden bedroom">
+                    </div>
+                    <div>
+                        <img src="./img/gallery-image-3.jpg" alt="Wooden living room">
+                    </div>
+                    <div>
+                        <img src="./img/gallery-image-4.jpg" alt="Wooden sofa">
+                    </div>
+                    <div>
+                        <img src="./img/gallery-image-5.jpg" alt="Wooden sofa">
+                    </div>
+                    <div>
+                        <img src="./img/gallery-image-6.jpg" alt="Wooden house">
+                    </div>
+                    <div>
+                        <img src="./img/gallery-image-7.jpg" alt="Wooden house">
+                    </div>
+                </div>
+                <ul class="control" id="custom-control-2">
+                    <li class="prev">
+                      <i class="fas fa-angle-left fa-2x"></i>
+                    </li>
+                    <li class="next">
+                      <i class="fas fa-angle-right fa-2x"></i>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="questions">
+            <div class="container">
+                <h2>Any questions?</h2>
+                <div class="forms">
+                    <p>Write to us and we will be sure to answer all
+                        your questions and give you a comprehensive
+                        consultation.
+                    </p>
+                    <form>
+                        <input type="text" placeholder="Your name">
+                        <input type="tel" placeholder="Your telephone number">
+                        <textarea cols="20" rows="20" placeholder="Your question"></textarea>
+                        <button>Send</button>
+                    </form>
+                    <img src="./img/questions-image-1.png" alt="Wood">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div>
+                <a href="#">
+                    <img src="./img/main-logo.png" alt="Main logo Biocwt">
+                </a>
+            </div>
+            <div class="tel">
+                <span>
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#ph_phone-call"></use>
+                    </svg>
+                    +420 000 000 000
+                </span>
+            </div>
+            <div class="locations">
+                <span>
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#bi_geo-alt"></use>
+                    </svg>
+                    <a href="index_contact.html">
+                        Na Plzeňce 1166/0 150 00
+                    </a>
+                </span>
+            </div>
+            <span class="pocily">
+                <a href="#">
+                    Privacy Policy
+                </a>
+            </span>
+        </div>
+    </footer>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js" integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/map.js"></script>
+    <script src="./js/script.min.js"></script>
+    <script>
+        let secondSlider = tns({
+          container: '#center',
+          items: 1,
+          gutter: 30,
+          center: true,
+          fixedWidth: 300,
+          controls: true,
+          autoplay: true,
+          loop: true,
+          mouseDrag: true,
+          autoplayButtonOutput: false,
+          controlsPosition: "bottom",
+          navPosition: "bottom",
+          controlsContainer: "#custom-control-2",
+          responsive: {
+            576: {
+              edgePadding: 20,
+              gutter: 20,
+              items: 1,
+              
+            },
+            768: {
+              gutter: 20,
+              fixedWidth: 600,
+              edgePadding: 20,
+              items: 1,
+            },
+            1170: {
+              items: 1,
+              gutter: 20,
+              edgePadding: 20,
+              fixedWidth: 1000,
+            }
+          }
+        });
+
+      </script>
+</body>
+</html>
