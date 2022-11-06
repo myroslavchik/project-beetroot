@@ -57,11 +57,27 @@
             <div class="container">
                 <h2>Price</h2>
                 <div id="slider-prices">
-                    <img src="./img/prices/price-image-1.1.png" alt="Price menu">
-                    <img src="./img/prices/price-image-1.2.png" alt="Price menu">
-                    <img src="./img/prices/price-image-2.1.png" alt="Price menu">
-                    <img src="./img/prices/price-image-2.2.png" alt="Price menu">
+                    <div>
+                        <img src="./img/prices/price-image-2.2.png" alt="Price menu">
+                    </div>
+                    <div>
+                        <img src="./img/prices/price.image-1.2.png" alt="Price menu">
+                    </div>
+                    <div>
+                        <img src="./img/prices/price-image-2.2.png" alt="Price menu">
+                    </div>
+                    <div>
+                        <img src="./img/prices/price.image-1.2.png" alt="Price menu">
+                    </div>
                 </div>
+                <ul class="control" id="custom-control">
+                    <li class="prev">
+                      <i class="fas fa-angle-left fa-2x"></i>
+                    </li>
+                    <li class="next">
+                      <i class="fas fa-angle-right fa-2x"></i>
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="questions">
@@ -122,7 +138,7 @@
     <script>
         let thirdSlider = tns({
           container: '#slider-prices',
-          items: 2,
+          items: 1,
           gutter: 10,
           edgePadding: 20,
           center: true,
@@ -136,23 +152,21 @@
           controlsContainer: "#custom-control",
           responsive: {
             576: {
-              edgePadding: 20,
-              gutter: 20,
-              items: 3,
+              gutter: 10,
+              items: 1,
               
             },
             768: {
-              gutter: 30,
-              items: 4,
+              gutter: 10,
+              items: 1,
             },
             960: {
-              items: 4,
-              gutter: 10,
-              fixedWidth: 300,
+              items: 1,
+              gutter: 40,
+              fixedWidth: 600,
             }
           }
         });
-
       </script>
 </body>
 </html>
