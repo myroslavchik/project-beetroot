@@ -77,28 +77,37 @@
         <section class="prices">
             <div class="container">
                 <h2>Price</h2>
-                <div id="prices">
-                    <div>
-                        <img src="./img/prices/price-image-2.2.png" alt="Price menu">
+                <div class="price">
+                    <div class="row-products">
+                        <span class="label label-primary">
+                            Select a product:
+                        </span>
+                        <select class="goods" name="goods" id="goods">
+                          <option value="1000">Oak</option>
+                          <option value="2000">Buck</option>
+                          <option value="3000">Ash</option>
+                          <option value="4000">Kauri</option>
+                          <option value="5000">Pine</option>
+                          <option value="6000">Spruce</option>
+                        </select>
                     </div>
-                    <div>
-                        <img src="./img/prices/price.image-1.2.png" alt="Price menu">
+                    <div class="row-square">
+                        <span class="label label-primary">EUR per square metre:</span>
+                        <input id="input" class="inputs" type="text" value="1" disabled="disabled"/>
+                        <div class="but">
+                            <div class="minus btn" id="minus">-</div>
+                            <div class="plus btn" id="plus">+</div>
+                        </div>
                     </div>
-                    <div>
-                        <img src="./img/prices/price-image-2.2.png" alt="Price menu">
+                    <div class="row-price">
+                        <label class="value-price">Price:</label>
+                        <span id="product-price">*</span>
                     </div>
-                    <div>
-                        <img src="./img/prices/price.image-1.2.png" alt="Price menu">
+                    <div class="row-result">
+                        <label class="label label-info value">Value:</label>
+                        <span class="result" id="result">*</span>
                     </div>
                 </div>
-                <ul class="control" id="custom-control-3">
-                    <li class="prev">
-                      <i class="fas fa-angle-left fa-2x"></i>
-                    </li>
-                    <li class="next">
-                      <i class="fas fa-angle-right fa-2x"></i>
-                    </li>
-                </ul>
                 <button id="myBtn" onclick="topFunction()">
                     <i class="fa-sharp fa-solid fa-chevron-up"></i>
                 </button>
@@ -155,46 +164,7 @@
             </span>
         </div>
     </footer>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js" integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/script.min.js"></script>
-    <script>
-        let thirdSlider = document.getElementById('#prices');
-
-        thirdSlider = tns({
-        container: '#prices',
-        items: 1,
-        gutter: 10,
-        edgePadding: 20,
-        fixedWidth: 300,
-        center: true,
-        controls: true,
-        controlsPosition: "bottom",
-        navPosition: "bottom",
-        autoplay: true,
-        mouseDrag: true,
-        loop: true,
-        autoplayButtonOutput: false,
-        controlsContainer: "#custom-control-3",
-        responsive: {
-        576: {
-            gutter: 10,
-            items: 1,
-            fixedWidth: 300,
-            
-        },
-        768: {
-            gutter: 10,
-            items: 1,
-            fixedWidth: 400,
-        },
-        1170: {
-            items: 1,
-            gutter: 40,
-            fixedWidth: 600,
-        }
-        }
-        });
-    </script>
 </body>
 </html>

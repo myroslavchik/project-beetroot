@@ -239,5 +239,79 @@
     <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js" integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/script.min.js"></script>
+    <script>
+        let secondSlider = document.getElementById('#center');
+
+        secondSlider = tns({
+        container: '#center',
+        items: 1,
+        gutter: 30,
+        center: true,
+        fixedWidth: 300,
+        controls: true,
+        autoplay: true,
+        loop: true,
+        mouseDrag: true,
+        autoplayButtonOutput: false,
+        controlsPosition: "bottom",
+        navPosition: "bottom",
+        controlsContainer: "#custom-control-2",
+        responsive: {
+        576: {
+            edgePadding: 20,
+            gutter: 20,
+            items: 1,
+            
+        },
+        768: {
+            gutter: 20,
+            fixedWidth: 600,
+            edgePadding: 20,
+            items: 1,
+        },
+        1170: {
+            items: 1,
+            gutter: 20,
+            edgePadding: 20,
+            fixedWidth: 1000,
+        }
+        }
+        });
+
+        let slider = document.querySelector('.my-slider');
+
+    slider = tns({
+    container: '.my-slider',
+    items: 2,
+    gutter: 10,
+    edgePadding: 20,
+    center: true,
+    controls: true,
+    controlsPosition: "bottom",
+    navPosition: "bottom",
+    autoplay: true,
+    mouseDrag: true,
+    loop: true,
+    autoplayButtonOutput: false,
+    controlsContainer: "#custom-control",
+    responsive: {
+      576: {
+        edgePadding: 20,
+        gutter: 20,
+        items: 3,
+        
+      },
+      768: {
+        gutter: 30,
+        items: 4,
+      },
+      960: {
+        items: 4,
+        gutter: 10,
+        fixedWidth: 300,
+      }
+    }
+  });
+    </script>
 </body>
 </html>
