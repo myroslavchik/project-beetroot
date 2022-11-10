@@ -115,13 +115,13 @@
                                           <input class="form-control" id="name2" name="name2" required="" type="text">
                                         </div>
                                       </div>
-                                        <label class="mb-3" for="email2">Email</label>
+                                        <label class="mb-3" for="email2" id="mail">Email</label>
                                       <div class="row mb-1">
                                         <div class="col-lg-12">
                                           <input class="form-control" id="email2" name="email2" required="" type="text">
                                         </div>
                                       </div>
-                                          <label class="mb-3" for="message2">Message</label>
+                                          <label class="mb-3" for="message2" id="message">Message</label>
                                       <div class="row mb-1">
                                         <div class="col-lg-12">
                                           <textarea class="form-control" id="message2" name="message2" required="" rows="6"></textarea>
@@ -133,10 +133,17 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cancel</button>
-                                <button type="button" class="btn btn-success">Confirm</button>
+                                <button id="confirm" type="button" class="btn btn-success" data-bs-dismiss="modal">Confirm</button>
                             </div>
                         </div>
                       </div>
+                    </div>
+                </div>
+                <div id="alert">
+                    <div class="inside">
+                        <h3>Thank You!</h3>
+                        <p id='alert-name'></p>
+                        <button id="btnAlert">Close</button>
                     </div>
                 </div>
             </div>
@@ -421,6 +428,25 @@
         }
         }
     });
+    </script>
+    <script>
+        let name = document.getElementById('name2');
+        let mail = document.getElementById('email2');
+        let message = document.getElementById('message2');
+        let alert = document.getElementById('alert');
+        let alertName = document.getElementById('alert-name');
+        let confirm = document.getElementById('confirm').addEventListener('click', function() {
+            localStorage.setItem("name", name.value);
+            localStorage.setItem("mail", mail.value);
+            localStorage.setItem("message", message.value);
+            alertName.innerHTML = localStorage.getItem("name");
+            alert.style.display = 'block';
+
+            
+            let button = document.getElementById('btnAlert').addEventListener('click', function() {
+            alert.style.display = 'none';
+        })
+        });
     </script>
 </body>
 </html>
